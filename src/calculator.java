@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class calculator {
 
+   private static Scanner scan = new Scanner(System.in);
+
     public static void main (String[] args){
 
         design();
@@ -33,8 +35,6 @@ public class calculator {
 
     public static double getNum(){
 
-        Scanner scan = new Scanner(System.in);
-
         if (scan.hasNextDouble()) {
             return scan.nextDouble();
         } else
@@ -45,7 +45,7 @@ public class calculator {
 
     public static char getOperation (){
 
-        Scanner scan = new Scanner(System.in);
+
         char operation;
 
         if (scan.hasNext()) {
